@@ -69,17 +69,17 @@ Model	mpg	cyl	disp	hp	drat	wt	qsec	vs	am	gear	carb
 ```
 
 ## Problem 2
+##### Import pandas as library
 ``` Python
-#Import pandas as library
 import pandas as pd
-
-Load the corresponding .csv file into a data frame named cars using pandas
+```
+### Load the corresponding .csv file into a data frame named cars using pandas
+``` Python 
 cars = pd.read_csv('cars.csv')
-
-a. Display the first five rows with odd-numbered columns (columns 1, 3, 5, 7...) of cars.
-Selection deleted
-
-#Print data frame with odd-numbered columns that contains the first five rows
+```
+### a. Display the first five rows with odd-numbered columns (columns 1, 3, 5, 7...) of cars.
+##### Print data frame with odd-numbered columns that contains the first five rows
+``` Python
 odd = cars.iloc[:5,::2]
 odd
 
@@ -89,25 +89,25 @@ Model	cyl	hp	wt	vs	gear
 2	Datsun 710	4	93	2.320	1	4
 3	Hornet 4 Drive	6	110	3.215	1	3
 4	Hornet Sportabout	8	175	3.440	0	3
-
-Display the row that contains the ‘Model’ of ‘Mazda RX4’.
-
-#Print the row for the model "Mazda RW4 Wag
+```
+### Display the row that contains the ‘Model’ of ‘Mazda RX4’.
+##### Print the row for the model "Mazda RW4 Wag
+``` Python
 cars.loc[[1]]
 
 Model	mpg	cyl	disp	hp	drat	wt	qsec	vs	am	gear	carb
 1	Mazda RX4 Wag	21.0	6	160.0	110	3.9	2.875	17.02	0	1	4	4
-
-How many cylinders (‘cyl’) does the car model ‘Camaro Z28’ have?
-
-#Print the cyl value for car model "Camaro Z28" 
+```
+### How many cylinders (‘cyl’) does the car model ‘Camaro Z28’ have?
+##### Print the cyl value for car model "Camaro Z28" 
+``` Python
 cars.loc[[23],['cyl']]
 cyl
 23	8
-
-Determine how many cylinders (‘cyl’) and what gear type (‘gear’) do the car models ‘Mazda RX4 Wag’, ‘Ford Pantera L’ and ‘Honda Civic’ have.
-
-#Print the cyl and gear of the given model cars
+```
+### Determine how many cylinders (‘cyl’) and what gear type (‘gear’) do the car models ‘Mazda RX4 Wag’, ‘Ford Pantera L’ and ‘Honda Civic’ have.
+##### Print the cyl and gear of the given model cars
+``` Python
 cars.loc[[1,18,28],['Model','cyl','gear']]
 
 Model	cyl	gear
