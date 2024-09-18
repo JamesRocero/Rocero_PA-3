@@ -5,7 +5,8 @@
 import pandas as pd
 ```
 ### Load the corresponding .csv file into a data frame named cars using pandas
-# Input the cars.csv file
+##### Input the cars.csv file
+``` Python
 cars = pd.read_csv('cars.csv')
 cars
 
@@ -42,9 +43,10 @@ Model	mpg	cyl	disp	hp	drat	wt	qsec	vs	am	gear	carb
 29	Ferrari Dino	19.7	6	145.0	175	3.62	2.770	15.50	0	1	5	6
 30	Maserati Bora	15.0	8	301.0	335	3.54	3.570	14.60	0	1	5	8
 31	Volvo 142E	21.4	4	121.0	109	4.11	2.780	18.60	1	1	4	2
-
-Print the first and last five rows of the resulting cars
-#Print first 5 rows 
+```
+### Print the first and last five rows of the resulting cars
+##### Print first 5 rows 
+``` Python
 cars.head()
 
 Model	mpg	cyl	disp	hp	drat	wt	qsec	vs	am	gear	carb
@@ -53,7 +55,7 @@ Model	mpg	cyl	disp	hp	drat	wt	qsec	vs	am	gear	carb
 2	Datsun 710	22.8	4	108.0	93	3.85	2.320	18.61	1	1	4	1
 3	Hornet 4 Drive	21.4	6	258.0	110	3.08	3.215	19.44	1	0	3	1
 4	Hornet Sportabout	18.7	8	360.0	175	3.15	3.440	17.02	0	0	3	2
-
+```
 #print last 5 rows
 cars.tail()
 
