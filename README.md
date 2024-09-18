@@ -102,6 +102,7 @@ Model	mpg	cyl	disp	hp	drat	wt	qsec	vs	am	gear	carb
 ##### Print the cyl value for car model "Camaro Z28" 
 ``` Python
 cars.loc[[23],['cyl']]
+
 cyl
 23	8
 ```
