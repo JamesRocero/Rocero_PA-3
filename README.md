@@ -1,7 +1,7 @@
 # Rocero_PA-3
 ## Problem 1
+##### Import pandas as library
 ``` Python
-#Import pandas as library
 import pandas as pd
 ```
 ### Load the corresponding .csv file into a data frame named cars using pandas
@@ -56,7 +56,8 @@ Model	mpg	cyl	disp	hp	drat	wt	qsec	vs	am	gear	carb
 3	Hornet 4 Drive	21.4	6	258.0	110	3.08	3.215	19.44	1	0	3	1
 4	Hornet Sportabout	18.7	8	360.0	175	3.15	3.440	17.02	0	0	3	2
 ```
-#print last 5 rows
+##### print last 5 rows
+``` Python
 cars.tail()
 
 Model	mpg	cyl	disp	hp	drat	wt	qsec	vs	am	gear	carb
